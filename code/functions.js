@@ -13,31 +13,24 @@ var car2 = new Car('Ford', 'F150', 2019);
 //console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
 
 
-class Surgeon {
-    constructor(name, department) {
-        this._name = name;
-        this._department = department;
+class car {
+    constructor(make) {
+        this._make = make;
+        this._color = "yellow";
     }
 
-    get name() 
-    { 
-        return this._name;
-    }
-
-    get department() {
-        return this._department;
-    }
-
-    get remainingVacationDays() {
-        return this._remainingVacationDays;
-    }
-
-    takeVacationDays(daysOff) {
-        this._remainingVacationDays -= daysOff;
+    get carColor() {
+        return this._color;
     }
 }
 
-const surgeonRomero = new Surgeon("Jackson Pollock", "Art");
-const surgeonJackson = new Surgeon("Thomas Kincade", "douche");
+class Chevy extends car {
+    constructor(make, year) {
+        super(make);
+        this._year = year;
+    }
+}
 
-console.log(surgeonJackson.name);
+const Tahoe = new Chevy("Tahoe", "1986");
+console.log(Tahoe);
+console.log(Tahoe.carColor);
