@@ -1,4 +1,4 @@
-let userName = "Andy";
+let userName = "Audelion";
 
 userName ? console.log(`Hello ${userName}`) : console.log("Hello!");
 
@@ -8,7 +8,7 @@ console.log(userQuestion);
 
 let randomNumber = Math.floor(Math.random() * 8);
 
-console.log(randomNumber);
+//console.log(randomNumber);
 
 let eightBall = "";
 
